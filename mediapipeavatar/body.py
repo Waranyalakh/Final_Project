@@ -74,6 +74,7 @@ class BodyThread(threading.Thread):
                 image = cv2.flip(image, 1)
                 image.flags.writeable = global_vars.DEBUG
                 
+                
                 # Detections
                 results = pose.process(image)
                 tf = time.time()
